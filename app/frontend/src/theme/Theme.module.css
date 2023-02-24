@@ -1,0 +1,27 @@
+.container {
+  --annuo-red: #F20406;
+  --annuo-blue: #2D62A6;
+
+  --background: #FFFFFF;
+  --primary: #dddddd;
+  --secondary: #5b5b6e;
+  --text-primary: #222222;
+  --text-secondary: #9F9FA3;
+  --highlight: #FFFFFF;
+  --accent: #FC76A1;
+  --error: rgb(204, 20, 20);
+  --error-accent: rgba(211, 47, 47, 0.403);
+  transition: ease-in-out 0.2s;
+}
+
+.container[data-darkmode=true] {
+  --background: #181820;
+  --primary: #21212B;
+  --secondary: #5b5b6e;
+  --text-primary: #FFFFFF;
+  --text-secondary: #9F9FA3;
+  --highlight: #FFFFFF;
+  --accent: #FC76A1;
+  --error: rgb(204, 20, 20);
+  --error-accent: rgba(211, 47, 47, 0.403);
+}

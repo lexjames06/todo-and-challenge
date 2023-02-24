@@ -1,0 +1,62 @@
+.container {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: end;
+	align-items: center;
+	background-color: var(--primary);
+	box-shadow: 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+	z-index: 1;
+	padding: 0 2rem;
+	color: var(--text-primary);
+}
+
+.container p {
+	margin: 0;
+}
+
+.container a {
+	text-decoration: none;
+	font-weight: 500;
+	margin-right: 2rem;
+}
+
+.container a:visited {
+	color: var(--text-primary);
+}
+
+.container a.login {
+	margin: 0;
+}
+
+.container span:nth-child(2) {
+	justify-self: end;
+}
+
+.container button {
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	background-color: var(--accent);
+	border: none;
+	font-size: var(--font-l);
+	font-weight: 500;
+	color: var(--text-primary);
+	cursor: pointer;
+	transition: ease-in-out 0.2s;
+}
+
+.container a.login button {
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	width: auto;
+	font-size: var(--font-m);
+	margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		padding: 0 1rem;
+	}
+}

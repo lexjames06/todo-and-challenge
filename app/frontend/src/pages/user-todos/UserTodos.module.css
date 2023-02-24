@@ -1,0 +1,85 @@
+.container {
+	position: relative;
+	display: grid;
+	max-width: 45rem;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 2rem;
+	grid-template-columns: 100%;
+	align-content: start;
+	row-gap: 2rem;
+	color: var(--text-primary);
+	overflow-y: hidden;
+}
+
+.container .header {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.errorContainer {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	color: var(--text-primary);
+	text-align: center;
+	padding: 1rem;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.optionsButton {
+  padding: 0.5rem;
+  border: 0.125rem solid var(--secondary);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5rem;
+  place-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.optionsButton[data-active=true] {
+  border-color: var(--accent);
+}
+
+.optionsButton span {
+  height: 0.5rem;
+  aspect-ratio: 1 / 1;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.optionsButton[data-active=true] span {
+  background-color: var(--accent);
+}
+
+.optionsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: stretch;
+  align-items: center;
+  width: 100%;
+  background-color: var(--primary);
+  padding: 0 2rem;
+  border-radius: 1rem;
+  height: 0;
+  overflow: hidden;
+}
+
+.optionsContainer[data-show=true] {
+  height: 10rem;
+  padding: 1rem 2rem;
+}
+
+.optionsContainer label {
+  justify-self: end;
+}

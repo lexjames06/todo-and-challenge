@@ -1,0 +1,26 @@
+.appContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 3.5rem auto;
+  overflow: hidden;
+  transition: ease-in-out 0.2s;
+}
+
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  overflow-y: hidden;
+  padding: 2rem;
+  transition: ease-in-out 0.2s;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainContainer {
+    padding: 2rem 0;
+  }
+}

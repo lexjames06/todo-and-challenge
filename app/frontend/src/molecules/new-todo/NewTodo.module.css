@@ -1,0 +1,41 @@
+.formContainer {
+	display: grid;
+	grid-template-columns: auto;
+	align-items: center;
+	column-gap: 1rem;
+	position: relative;
+}
+
+.formContainer textarea {
+	height: fit-content;
+	padding: 2rem;
+	padding-left: 6rem;
+	color: var(--text-primary);
+	background-color: transparent;
+	border: 0.25rem solid var(--primary);
+	border-radius: 1rem;
+	font-family: var(--font-family);
+	font-size: var(--font-m);
+	resize: none;
+	transition: ease-in-out 0.2s;
+}
+
+.formContainer textarea:focus {
+	outline: none;
+	border-color: var(--accent);
+}
+
+.formContainer input[type="submit"] {
+	height: 2.5rem;
+	width: 2.5rem;
+	font-size: var(--font-l);
+	position: absolute;
+	left: 2rem;
+	border-radius: 0.75rem;
+	transition: ease-in-out 0.2s;
+}
+
+.formContainer input[type="submit"]:disabled {
+	background-color: var(--primary);
+	color: var(--text-secondary);
+}
